@@ -7,3 +7,58 @@
     margin: 0;
     padding: 0;
 }
+
+.word-of-the-year-container {
+	width: 100%;
+	display: inline-block;
+	max-width: 620px;
+	box-sizing: border-box;
+	padding: 20px;
+
+	h2 {
+		font-family: "Guardian Titlepiece";
+		font-size: 26px;
+		line-height: 30px;
+		color: black;
+
+
+		span {
+			color: red;
+		}
+	}
+
+	.word-of-the-year-submit {
+		float: right;
+		margin-bottom: 10px;
+		background-color: red;
+		font-size: 18px;
+	}
+
+	.word-of-the-year-notes {
+		width: 100%;
+		color: darkgrey;
+		font-size: 13px;
+		clear: both;
+		font-family: 'Guardian Text Sans Web', TextSans, Arial, sans-serif;
+	}
+
+	.years {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		width: 100%;
+		height: 36px;
+		line-height: 36px;
+		font-size: 20px;
+		color: black;
+		background-color: lightgrey;
+		padding-left: 10px;
+		border-radius: 5px;
+		border: 1px solid black;
+		font-family: 'Guardian Text Sans Web', TextSans, Arial, sans-serif;
+	}
+
+	.word-of-the-year-message {
+		color: red;
+		font-family: 'Guardian Text Sans Web', TextSans, Arial, sans-serif;
+	}
+}

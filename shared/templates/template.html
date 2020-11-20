@@ -1,0 +1,34 @@
+<div class='word-of-the-year-container'>
+
+  {{#if participated}}
+
+  <div class="word-of-the-year-message"></div>
+
+  {{else}}
+
+  <h2><span>2020</span> is nearly over. We want you to summarise* how you felt about <span>2020</span> in a single word:</h2>
+
+  <input id="this-year" class="years" type="text" value='{{year1}}'>
+
+  <h2>And how do you think <span>2021</span> will be, again in a single word?</h2>
+
+  <input id="next-year" class="years" type="text" value='{{year2}}'>
+
+  <button class="word-of-the-year-submit" on-click="['submit']">Submit</button> 
+
+  {{#if display}}<div class="word-of-the-year-message">{{message}}</div>{{/if}}
+
+  <div class="word-of-the-year-notes">
+    * The results of these questions will be displayed in an end-of-year graphical feature on The Guardian. We will be filtering out particularly offensive words, but not all swear words. We are not storing any personal details with your submission, but we are creating a unique fingerprint (hash) based on your device and IP address to reduce the risk of people spamming our voting system. You can respond once per device
+  </div>
+
+  {{/if}}
+
+  {{#if final}}
+
+    <h3>Thank you for taking part. The results will displayed in and end-of-year graphical feature on The Guardian.</h3>
+
+  {{/if}}
+
+</div>
+
