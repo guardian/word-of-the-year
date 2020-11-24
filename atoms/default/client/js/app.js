@@ -1,10 +1,7 @@
 // if you want to import a module from shared/js then you can
 // just do e.g. import Scatter from "shared/js/scatter.js"
 import template from 'shared/templates/template.html'
-import { $, $$, round, numberWithCommas, wait, getDimensions } from 'shared/js/util'
 import Ractive from 'ractive'
-import ractiveFade from 'ractive-transitions-fade'
-import ractiveTap from 'ractive-events-tap'
 import Fingerprint2 from 'fingerprintjs2sync';
 import wordCheck from 'shared/js/wordCheck'
 import moment from 'moment'
