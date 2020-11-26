@@ -4,6 +4,7 @@ import template from 'shared/templates/template.html'
 import Ractive from 'ractive'
 import Fingerprint2 from 'fingerprintjs2sync';
 import wordCheck from 'shared/js/wordCheck'
+import { $, $$, round, numberWithCommas, wait, getDimensions } from 'shared/js/util'
 import moment from 'moment'
 Ractive.DEBUG = false;
 
