@@ -8,11 +8,11 @@
 
   <h2><span>2020</span> is nearly over. We want you to summarise* how you felt about <span>2020</span> in a single word:</h2>
 
-  <input id="this-year" class="years" type="text" value='{{year1}}'>
+  <input id="this-year" class="years" type="text" value='{{year1}}' autocomplete="off">
 
   <h2>And how do you think <span>2021</span> will be, again in a single word?</h2>
 
-  <input id="next-year" class="years" type="text" value='{{year2}}'>
+  <input id="next-year" class="years" type="text" value='{{year2}}' autocomplete="off">
 
   <button class="word-of-the-year-submit" on-click="['submit']">Submit</button> 
 
@@ -26,7 +26,7 @@
 
   {{#if final}}
 
-    <h3>Thank you for taking part. The results will displayed in and end-of-year graphical feature on The Guardian.</h3>
+    <h3>Thank you for taking part. The results will displayed in an end-of-year graphical feature on The Guardian.</h3>
 
   {{/if}}
 
