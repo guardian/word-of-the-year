@@ -16,8 +16,8 @@
 	padding: 20px;
 
 	h2 {
-		font-family: "Guardian Titlepiece";
-		font-size: 26px;
+		font-family: "Guardian Egyptian Web", Georgia, serif;
+		font-size: 1.5em;
 		line-height: 30px;
 		color: black;
 
@@ -31,8 +31,40 @@
 		float: right;
 		margin-bottom: 10px;
 		background-color: red;
-		font-size: 18px;
+		font-size: 1.1em;
+		border-radius: 62.5rem;
+		box-sizing: border-box;
+		font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	    color: #FFF;
+		cursor:pointer;
+		outline: 0;
+		border: none;
+		font-weight:bold;
+		padding: 4px 10px;
+
 	}
+
+	.word-of-the-year-submit:hover {
+		opacity: 0.7 !important;
+	}
+
+	.btn {
+	    background-color: #767676;
+	    border-radius: 62.5rem;
+	    border: none;
+	    display: inline-block;
+	    outline: 0;
+	    box-sizing: border-box;
+	    font-size: 12px;
+	    line-height: 16px;
+	    font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	    color: #FFF;
+	    padding: 4px 10px;
+	    margin: 1px 1px;
+	    text-align: right;
+	    cursor:pointer;
+  		
+  	}
 
 	.word-of-the-year-notes {
 		width: 100%;
@@ -50,7 +82,7 @@
 		line-height: 36px;
 		font-size: 20px;
 		color: black;
-		background-color: lightgrey;
+		background-color: #FFF;
 		padding-left: 10px;
 		border-radius: 5px;
 		border: 1px solid black;
