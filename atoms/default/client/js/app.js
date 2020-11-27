@@ -210,7 +210,7 @@ class Words {
 
             if (!localStorage.getItem('ga_poll_' + self.cid)) {
 
-                //localStorage.setItem('ga_poll_' + self.cid, JSON.stringify({ "uid" : self.uid, "cid" : self.cid, "key" : self.key, "data" : data, "token" : self.token }))
+                localStorage.setItem('ga_poll_' + self.cid, JSON.stringify({ "uid" : self.uid, "cid" : self.cid, "key" : self.key, "data" : data, "token" : self.token }))
 
                 self.postdata(data)
 

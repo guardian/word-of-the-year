@@ -43,3 +43,28 @@ if (window.frameElement) {
     });
 
 }
+
+const doResize = () => {
+
+  if(window.resize) {
+      window.resize()
+  }
+
+  window.parent.postMessage({
+      sentinel: 'amp',
+      type: 'embed-size',
+      height: document.body.scrollHeight
+    }, '*')
+}
+
+try {
+  doResize()
+} catch(err) { console.log("Resize error", err) }
+
+document.body.addEventListener('load', () => {
+
+    try {
+        doResize()
+    } catch(err) { console.log("Resize onLoad error", err) }
+
+})
