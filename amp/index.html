@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
+</head>
+<body style="width: 100%;">
+
+<div id="app" class="interactive-wrapper"></div>
+
+<script src="app.js"></script>
+<script type="text/javascript">
+
+
+	iframeMessenger.enableAutoResize();
+	
+	const doResize = () => {
+
+		console.log("Reszie")
+
+	  if(window.resize) {
+	      window.resize()
+	  }
+
+	  window.parent.postMessage({
+	      sentinel: 'amp',
+	      type: 'embed-size',
+	      height: document.body.scrollHeight
+	    }, '*')
+	}
+
+	try {
+	  doResize()
+	} catch(err) { console.log("Resize error", err) }
+
+		document.body.addEventListener('load', () => {
+
+	    try {
+	        doResize()
+	    } catch(err) { console.log("Resize onLoad error", err) }
+
+	})
+
+
+</script>
+
+</body>
+</html>
